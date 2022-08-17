@@ -26,7 +26,7 @@ Main trials were in learning rate and layers chosen. Increased learning rate fro
 <!-- 
 | Layers | Conv(block 2-block 3x2-block 4) | ReLu(blocks 2,3,4,5) |
 | :-: | :-: | :-: |
-| Learning rate=0.01 | ![](img/NST_trials0.jpg) | ![](img/NST_trials1.jpg) | -->
+| Learning rate=0.01 | ![](resnet50_nst/img/NST_trials0.jpg) | ![](resnet50_nst/img/NST_trials1.jpg) | -->
 
 
 
@@ -34,27 +34,27 @@ Main trials were in learning rate and layers chosen. Increased learning rate fro
 
 | Style | Conv(block 2-block 3x2-block 4)<br /> | ReLu(blocks 2,3,4,5)<br /> |
 | :-: | :-: | :-: |
-| ![](img/NST_trials4.jpg) | ![](img/NST_trials3.jpg)|![](img/NST_trials2.jpg) |
-| ![](img/NST_trials7.jpg) | ![](img/NST_trials5.jpg) | ![](img/NST_trials6.jpg) |
+| ![](resnet50_nst/img/NST_trials4.jpg) | ![](resnet50_nst/img/NST_trials3.jpg)|![](resnet50_nst/img/NST_trials2.jpg) |
+| ![](resnet50_nst/img/NST_trials7.jpg) | ![](resnet50_nst/img/NST_trials5.jpg) | ![](resnet50_nst/img/NST_trials6.jpg) |
 
 
 # Testing ReLu layers on geometrically defined style images yielded much better results wrt conv layers
 
 | Test image | Conv | ReLu |
 | :-: | :-: | :-: |
-| ![](img/hex.png) | ![](img/NST_trials8.jpg) | ![](img/NST_trials9.jpg)|
+| ![](resnet50_nst/img/hex.png) | ![](resnet50_nst/img/NST_trials8.jpg) | ![](resnet50_nst/img/NST_trials9.jpg)|
 
 # Experiments with weighted ratio of Conv to ReLu layers
 
 
 | Conv | ReLu | Relu+Conv |
 | :-: | :-: | :-: |
-| ![](img/conv1.png) |![](img/relu_1.png)  | ![](img/conv%2Brelu.png) |
-| ![](img/NST_trials18.jpg) | ![](img/NST_trials19.jpg) | ![](img/NST_trials20.jpg) |
+| ![](resnet50_nst/img/conv1.png) |![](resnet50_nst/img/relu_1.png)  | ![](resnet50_nst/img/conv%2Brelu.png) |
+| ![](resnet50_nst/img/NST_trials18.jpg) | ![](resnet50_nst/img/NST_trials19.jpg) | ![](resnet50_nst/img/NST_trials20.jpg) |
 
 
 # Some trials with excessive style weight (e8-e12)
-![](img/excess.png)
+![](resnet50_nst/img/excess.png)
 
 # Improvements to model robustness:
 
@@ -80,7 +80,7 @@ Trials moving style layers higher to increase robustness.
 
 | Before | After |
 | :-: | :-: |
-| ![](img/update_before.png)  |  ![](img/NST_trials26.jpg) |
+| ![](resnet50_nst/img/update_before.png)  |  ![](resnet50_nst/img/NST_trials26.jpg) |
 
 
 
