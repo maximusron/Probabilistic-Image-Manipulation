@@ -24,7 +24,7 @@ This can be illustrated be preliminary performance using ResNet50 for NST with s
 I have analyzed different layers of ResNet architecture to find the optimal content and style layers for NST as well as implemented the content and style losses for NST.
 
 
-# Observations in NST trials with RESNET50
+### Observations in NST trials with RESNET50
 Trials by style weight and content weight gave bad results so used the optimal values provided in Kaggles documentation of RESNET50 NST
 Main trials were in learning rate and layers chosen. Increased learning rate from 0.01 to 20 which made the change in image appear drastically every 100 iterations
 <!-- 
@@ -42,13 +42,13 @@ Main trials were in learning rate and layers chosen. Increased learning rate fro
 | ![](resnet50_nst/img/NST_trials7.jpg) | ![](resnet50_nst/img/NST_trials5.jpg) | ![](resnet50_nst/img/NST_trials6.jpg) |
 
 
-# Testing ReLu layers on geometrically defined style images yielded much better results wrt conv layers
+### Testing ReLu layers on geometrically defined style images yielded much better results wrt conv layers
 
 | Test image | Conv | ReLu |
 | :-: | :-: | :-: |
 | ![](resnet50_nst/img/hex.png) | ![](resnet50_nst/img/NST_trials8.jpg) | ![](resnet50_nst/img/NST_trials9.jpg)|
 
-# Experiments with weighted ratio of Conv to ReLu layers
+### Experiments with weighted ratio of Conv to ReLu layers
 
 
 | Conv | ReLu | Relu+Conv |
@@ -57,10 +57,10 @@ Main trials were in learning rate and layers chosen. Increased learning rate fro
 | ![](resnet50_nst/img/NST_trials18.jpg) | ![](resnet50_nst/img/NST_trials19.jpg) | ![](resnet50_nst/img/NST_trials20.jpg) |
 
 
-# Some trials with excessive style weight (e8-e12)
+### Some trials with excessive style weight (e8-e12)
 ![](resnet50_nst/img/excess.png)
 
-# Improvements to model robustness:
+### Improvements to model robustness:
 
 After analyzing the layerwise feature capture, it was observed that combined conv+relu layers at later stages in the model provide the most robust feature capture.
 
